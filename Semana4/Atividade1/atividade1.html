@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <label>
+        <input type="radio" name="tipo" value="professor" checked> Professor
+    </label>
+    <label>
+        <input type="radio" name="tipo" value="aluno"> Aluno
+    </label>
+
+    <form id="form-professor">
+        <h3>Cadastro de Professor</h3>
+        <label>Nome: <input type="text" id="nome-prof" required></label><br><br>
+        <label>Email: <input type="email" id="email-prof" required></label><br><br>
+        <label>Data de Nascimento: <input type="date" id="data-prof"></label><br><br>
+        <label>Telefone Fixo: <input type="text" id="fixo-prof"></label><br><br>
+        <label>Telefone Celular: <input type="text" id="cel-prof"></label><br><br>
+        <label>Área: <input type="text" id="area-prof"></label><br><br>
+        <label>Lattes: <input type="text" id="lattes-prof"></label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form id="form-aluno" style="display: none;">
+        <h3>Cadastro de Aluno</h3>
+        <label>Nome: <input type="text" id="nome-aluno" required></label><br><br>
+        <label>Email: <input type="email" id="email-aluno" required></label><br><br>
+        <label>Data de Nascimento: <input type="date" id="data-aluno"></label><br><br>
+        <label>Telefone Fixo: <input type="text" id="fixo-aluno"></label><br><br>
+        <label>Telefone Celular: <input type="text" id="cel-aluno"></label><br><br>
+        <label>Curso: <input type="text" id="curso-aluno"></label><br><br>
+        <label>Matrícula: <input type="text" id="matricula-aluno"></label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
