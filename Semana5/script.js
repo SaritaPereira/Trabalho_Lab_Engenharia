@@ -37,8 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const homens = criarContador("Homens", "img/homem.png");
     const mulheres = criarContador("Mulheres", "img/mulher.png");
 
-    contadoresBox.appendChild(homens.box);
-    contadoresBox.appendChild(mulheres.box);
+    const containerContador = document.createElement("div");
+    containerContador.style.display = "flex";
+
+    containerContador.appendChild(homens.box);
+    containerContador.appendChild(mulheres.box);
+
+    container.appendChild(containerContador);
 
     container.appendChild(totalBox);
     container.appendChild(contadoresBox);
