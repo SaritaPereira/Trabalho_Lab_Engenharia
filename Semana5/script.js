@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.createElement("div");
     container.classList.add("container");
 
-    // Seção do Total
     const totalBox = document.createElement("div");
     totalBox.classList.add("total-box");
 
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     totalBox.appendChild(totalNumero);
     totalBox.appendChild(btnReset);
 
-    // Criando contadores lado a lado
     const contadoresBox = document.createElement("div");
     contadoresBox.classList.add("contadores-box");
 
